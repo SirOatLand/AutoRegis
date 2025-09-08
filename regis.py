@@ -4,10 +4,10 @@ import time
 import subprocess
 
 def run_bash_script():
-    subprocess.run(['bash', 'regis.sh'])
+    subprocess.run(['bash', 'regis.sh', './curl.sh'])
 
 # Schedule the execution of the bash script at a specific time
-schedule.every().day.at("13:59:45").do(run_bash_script)
+schedule.every().day.at("12:38:30").do(run_bash_script)
 
 subprocess.run(['clear'])
 while True:
